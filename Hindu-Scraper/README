@@ -1,0 +1,5 @@
+This is the scraper directory.
+scrapeLinks.py will scrape article links from https://www.thehindu.com/archive/ and write them to links.txt
+scrapeArticles.py will parse articles from these links.
+
+Provided are truncated versions of the extracted article sets we used in our project. Only the first 2000 articles are provided so as to not bloat the size of this code submission.
