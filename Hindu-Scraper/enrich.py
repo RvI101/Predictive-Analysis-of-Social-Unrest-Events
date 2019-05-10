@@ -31,7 +31,7 @@ def enrich(article):
 				word_frequencies[word] += 1
 	if not word_frequencies:
 		return {}
-	article['keywords'] = word_frequencies
+	article['keywords'] = word_frequencies.copy()
 	maximum_frequncy = max(word_frequencies.values())
 
 	for word in word_frequencies.keys():  
@@ -51,9 +51,9 @@ def enrich(article):
 	article['summary'] = summary
 	return article
 
-articles = read_articles('news19')
+articles = read_articles('newsT')
 enriched_articles = [enrich(article) for article in articles]
-with open('enriched_news','w',newline='') as f:
+with open('enriched_newsT','w',newline='') as f:
 	writer = csv.DictWriter(f, fieldnames=enriched_articles[0].keys(),delimiter="|",extrasaction='ignore')
 	writer.writeheader()
 	for article in enriched_articles:
