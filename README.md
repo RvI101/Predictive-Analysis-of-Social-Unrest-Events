@@ -1,6 +1,6 @@
 # Predicting Social Unrest Events Caused By Elections
 
-- Arvind Ramachandran
+- Arvind Ramachandran (@RvI101)
 - Dhayanidhi Gunasekaran (@dnidhi2710)
 - Navaneethakrishnan Ramanathan (@sudonav)
 
